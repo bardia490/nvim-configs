@@ -1,0 +1,23 @@
+vim.cmd.inoremap("jk", "<Esc>")
+vim.cmd.inoremap("{", "{}<Esc>i")
+vim.cmd.inoremap("(", "()<Esc>i")
+vim.cmd.inoremap("\"", '""<Esc>i')
+
+vim.cmd.nnoremap("H", "0")
+vim.cmd.nnoremap("L", "$")
+vim.cmd.nnoremap("m", "%")
+vim.cmd.nnoremap("<Enter>", ":nohl<CR>")
+vim.cmd.nnoremap("<F2>", ":tabnew<CR>:terminal<CR>")
+vim.cmd.nnoremap("<F3>", ":tabnext<CR>")
+vim.cmd.nnoremap("<F8>", ":q!<CR>")
+vim.cmd.nnoremap("<Space>oc", ":e C:/Users/Asus/AppData/Local/nvim/init.lua<CR>")
+
+vim.cmd.vnoremap("\"", "c\"\"<Esc>hp")
+vim.cmd.vnoremap("H", "0")
+vim.cmd.vnoremap("L", "$")
+vim.cmd.vnoremap("m", "%")
+vim.cmd.vnoremap("(", "c()<Esc>hp")
+vim.cmd.vnoremap('{', 'c{}<Esc>hp')
+vim.cmd.vnoremap('//', 'y:/<C-R>0<CR>')
+
+vim.cmd.tnoremap("jk", "<C-\\><C-N>")
