@@ -23,10 +23,8 @@ vim.opt.winblend = 10 -- floating window transparency
 -- Enable undo/redo changes even after closing and reopening a file
 vim.o.undofile = true
 
-vim.lsp.config('ts_ls', dofile(vim.fn.stdpath('config') .. '/lsp/ts_ls.lua'))   -- adjust the path
-
 -- lsp configurations
-vim.lsp.enable({'zls', 'lua_ls', 'ts_ls', "gopls"})
+vim.lsp.enable({'zls', 'lua_ls', 'tsc', "gopls"})
 
 vim.cmd.colorscheme "catppuccin"
 -- transparent background
